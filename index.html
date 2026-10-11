@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Card Generate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="card">
+      <h1 id="heading">Student Card Generate</h1>
+      <div id="user-data-container">
+        <h2>Enter Your Detail</h2>
+        <div class="input-container">
+          <h3>Enter Your Name:</h3>
+          <input type="text" id="student-name" placeholder="Enter Your Name" />
+        </div>
+        <div class="input-container">
+          <h3>Enter Your Father Name:</h3>
+          <input
+            type="text"
+            id="student-father-name"
+            placeholder="Enter Your Father Name"
+          />
+        </div>
+        <div class="input-container">
+          <h3>Enter Your Class:</h3>
+          <input
+            type="number"
+            id="student-class"
+            placeholder="Enter Your Class"
+          />
+        </div>
+        <div class="input-container">
+          <h3>Enter Your Roll no:</h3>
+          <input
+            type="number"
+            id="student-roll-no"
+            placeholder="Enter Your Roll No"
+          />
+        </div>
+        <div class="input-container">
+          <h3>Enter Your City:</h3>
+          <select name="cities" id="cities-options">
+            <option value="city">Cities</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="multan">Multan</option>
+            <option value="sialkot">Sialkot</option>
+            <option value="peshawar">Peshawar</option>
+          </select>
+        </div>
+        <div>
+          <button id="generate-card">Generate Card</button>
+        </div>
+      </div>
+      <div id="card-container">
+        <h2>Student Card</h2>
+        <div id="name-div">
+          <b>Name: </b>
+          <span id="name"></span>
+        </div>
+        <div id="father-name-div">
+          <b>Father Name: </b>
+          <span id="father-name"></span>
+        </div>
+        <div id="class-div">
+          <b>Class: </b>
+          <span id="class"></span>
+        </div>
+        <div id="roll-no-div">
+          <b>Roll no: </b>
+          <span id="roll-no"></span>
+        </div>
+        <div id="city-div">
+          <b>City: </b>
+          <span id="city"></span>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
